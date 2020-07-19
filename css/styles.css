@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+ 
+}
+body{
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+width: 100%;
+
+}
+
+h1{
+    padding: 5px;
+    margin: 75px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+#center{
+    text-align: center;
+
+}
+ #container1, #container2, #container3 {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    border: 3px solid black;
+    background-color:darkgray;
+    width: 390px;
+    height: 230px;
+    margin: 10px;
+
+}
+
+p {
+    padding: 25px 15px 0 15px;
+}
+ #top1, #top2, #top3 {
+    position: absolute;
+    right: 0px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+}
+
+div > div#top1{
+    background-color:rosybrown;
+    padding: 5px;
+
+}
+div > div#top2{
+    background-color:red;
+    padding: 5px;
+
+}
+div > div#top3{
+    background-color:beige;
+    padding: 5px;
+
+}
+
+
+
+
+
+/********** Medium devices only **********/
+@media (min-width:992px){
+#container1, #container2, #container3{
+     max-width: 120%;
+
+    }
+}
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+div#container3{
+width: 81%;
+height: 140px ;    }
+}
+    /********** Small devices only **********/
+
+@media (max-width: 767px){
+    #container1, #container2, #container3{
+     width: 90%;
+        height: 50%;
+
+    }
+    
+}
